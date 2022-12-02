@@ -8,7 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { Dashboard2Component } from './dashboard2/dashboard2.component';
 import { Dashboard3Component } from './dashboard3/dashboard3.component';
 import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
-
+import { MahasiswaSPAComponent } from './mahasiswa-spa/mahasiswa-spa.component';
 const routes: Routes = [
   {path : "", redirectTo : "login", pathMatch : "full"},
   {path: "admin", component : AdminComponent},
@@ -17,7 +17,9 @@ const routes: Routes = [
   {path : "dashboard2", component : Dashboard2Component},
   {path : "dashboard3", component : Dashboard3Component},
   {path : "register", component : RegisterComponent},
-  {path : "mahasiswa", component : MahasiswaComponent}
+  {path : "mahasiswa", component : MahasiswaComponent},
+  {path : "mahasiswaspa", component : MahasiswaSPAComponent},
+
 ];
 
 @NgModule({
