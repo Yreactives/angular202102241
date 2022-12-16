@@ -17,6 +17,7 @@ import { MahasiswaComponent } from './mahasiswa/mahasiswa.component';
 import {HttpClientModule} from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { MahasiswaSPAComponent } from './mahasiswa-spa/mahasiswa-spa.component';
+import { ForexComponent } from './forex/forex.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +32,8 @@ import { MahasiswaSPAComponent } from './mahasiswa-spa/mahasiswa-spa.component';
     Dashboard2Component,
     Dashboard3Component,
     MahasiswaComponent,
-    MahasiswaSPAComponent
+    MahasiswaSPAComponent,
+    ForexComponent
   ],
   imports: [
     BrowserModule,

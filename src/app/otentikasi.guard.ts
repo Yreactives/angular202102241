@@ -25,6 +25,7 @@ export class OtentikasiGuard implements CanActivate {
 
     }
     else{
+      
       return true;
     }
     this.router.navigate(['/login']);

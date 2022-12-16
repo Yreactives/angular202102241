@@ -13,10 +13,10 @@
           <img src="../../assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">202102241 Ronny</a>
+          <a href="#" class="d-block">{{getitem()}}</a>
         </div>
       </div>
-
+      
       <!-- SidebarSearch Form -->
       <div class="form-inline">
         <div class="input-group" data-widget="sidebar-search">
@@ -87,6 +87,15 @@
               <i class="nav-icon fas fa-th"></i>
               <p>
                 Mahasiswa (RouterLink)
+                
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {{moduleName == 'forex' ? 'active': ''}} " [routerLink]="['/forex']" routerLinkActive="router-link-active">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Forex
                 
               </p>
             </a>
