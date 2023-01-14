@@ -38,7 +38,8 @@ export class ForexComponent implements OnInit, AfterViewInit{
     this.http.get(url).subscribe((data : any) => {
       console.log(data);
       var rates = data.rates;
-      console.log(rates)
+      console.log(rates);
+      
       var idr = rates.IDR;
       var idr2 = formatCurrency(idr, "en-US", "", "USD");
       console.log("USD : " + idr2);
